@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando Condições Simples</title>
+</head>
+<body>
+    <h1>Brasileiro ou Estrangeiro?</h1>
+    <label for="txtpais">Digite o nome do país que você nasceu e descubra.</label>
+    <input type="text" name="txtpais" id="txtpais" placeholder="Digite aqui">
+    <button type="button" id="botao">Validar</button>
+    <div id="res"></div>
+
+
+    <script>
+        const pais = document.getElementById('txtpais');
+        const botao = document.getElementById('botao');
+        const resultado = document.getElementById('res');
+
+        botao.addEventListener('click', function() {
+            if (pais.value.toLowerCase() === "brasil") {
+            resultado.innerHTML = "Você é brasileiro.";
+            } else {
+            resultado.innerHTML = "Você é Estrangeiro."
+            }
+            
+        });
+
+    </script>
+    
+</body>
+</html>
