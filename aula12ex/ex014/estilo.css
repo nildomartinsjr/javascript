@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(70, 142, 236);
+    font: normal 15pt Arial;
+    margin: 0;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 0; /* Remove padding para evitar deslocamento */
+    width: 500px;
+    height: 300px; /* Define uma altura fixa para centralizar verticalmente */
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+    display: table; /* Define a section como uma tabela */
+}
+
+div {
+    display: table-cell; /* Centraliza o conteúdo */
+    vertical-align: middle; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza horizontalmente */
+}
+
+#imagem {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da section */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
