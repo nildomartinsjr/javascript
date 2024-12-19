@@ -1,4 +1,4 @@
-@charset "UTF 8";
+@charset "UTF-8";
 
 body {
     background-color: rgb(70, 142, 236);
@@ -17,6 +17,23 @@ section {
     width: 500px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+#res {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#res img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
 }
 
 footer {
