@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando condições</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <label for="txtvel">Velocidade do carro em Km/h:</label>
+    <input type="number" name="txtvel" id="txtvel">
+    <button id="botao">Verificar</button>
+    <div id="res"></div>
+
+    <script>
+        const vel = document.getElementById('txtvel')
+        const botao = document.getElementById('botao')
+        const resultado = document.getElementById('res')
+
+        botao.addEventListener('click', function(){
+            const velValor = Number(vel.value)
+
+            if(velValor <= 60) {
+                resultado.innerHTML = `<p>Sua velocidade atual é de <strong>${velValor}Km/h</strong></p>` 
+                resultado.innerHTML += `<p>Dirija sempre usando cinto de segurança!</p>`
+            }else{
+                resultado.innerHTML = `<p>Sua velocidade atual é de <strong>${velValor}Km/h</strong></p>`
+                resultado.innerHTML += `<p>Você ultrapassou a velocidade permitida. <strong>MULTADO(A)!</strong></p>`
+                resultado.innerHTML += `<p>Dirija sempre usando cinto de segurança!</p>`
+            }
+        })
+
+
+    </script>
+
+
+    
+</body>
+</html>
